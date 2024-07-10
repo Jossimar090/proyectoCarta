@@ -26,7 +26,7 @@
         <h2>Método de Pago</h2>
         <p id="metodoPagoSeleccionado"></p>
         <p class="total" id="totalPedido"></p>
-        
+        <button>Pagar</button>
     </div>
 
     <script>
@@ -59,7 +59,7 @@
 
             metodoPagoSeleccionado.textContent = metodoPago.charAt(0).toUpperCase() + metodoPago.slice(1);
 
-            totalPedido.textContent = 'Total: s/ ' + total.toFixed(2);
+            totalPedido.textContent = 'Total: $' + total.toFixed(2);
         });
     </script>
 </body>
